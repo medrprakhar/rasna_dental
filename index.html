@@ -5,6 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rasna Dental Care | Advanced Dental & TMJ Centre, Chittorgarh</title>
     <meta name="description" content="Rasna Dental Care in Chittorgarh - Advanced Dental & TMJ Centre offering expert dental treatments, root canals, orthodontics, and painless care. Led by experienced dental specialists.">
+    
+    <!-- Local Business Schema (JSON-LD) for Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Rasna Dental Care",
+      "image": "https://www.rasnadental.com/new-logo.jpg",
+      "@id": "https://www.rasnadental.com",
+      "url": "https://www.rasnadental.com",
+      "telephone": "+919610130090",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "63-A, A63, Udaipur Road, near Nakoda Restaurant, Senthi, Bapu Nagar",
+        "addressLocality": "Chittorgarh",
+        "addressRegion": "Rajasthan",
+        "postalCode": "312001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 24.8880,
+        "longitude": 74.6180
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "20:00"
+      },
+      "sameAs": [
+        "https://instagram.com/rasna_dental_care",
+        "https://facebook.com/rasna_dental_care",
+        "https://maps.google.com/?q=Rasna+Dental+Care+Chittorgarh"
+      ]
+    }
+    </script>
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -41,7 +86,7 @@
             </div>
             <div class="flex items-center space-x-4">
                 <a href="tel:+919610130090" class="hover:text-gold-500 transition"><i class="fas fa-phone-alt text-gold-500 mr-1"></i> +91 96101 30090</a>
-                <a href="https://instagram.com/rasna_dental_care" target="_blank" class="hover:text-gold-500 transition"><i class="fab fa-instagram text-gold-500 mr-1"></i> @rasna_dental_care</a>
+                <a href="https://instagram.com/rasna_dental_care" target="_blank" rel="me" class="hover:text-gold-500 transition"><i class="fab fa-instagram text-gold-500 mr-1"></i> @rasna_dental_care</a>
             </div>
         </div>
     </div>
@@ -227,7 +272,7 @@
                             <div>
                                 <h4 class="font-bold text-slate-900">Location</h4>
                                 <p class="text-slate-600 text-sm">63-A, A63, Udaipur Road, near Nakoda Restaurant, Senthi, Bapu Nagar, Chittorgarh, Rajasthan 312001</p>
-                                <a href="https://maps.app.goo.gl/rasnadental" target="_blank" class="inline-flex items-center text-dental-700 hover:text-dental-800 text-sm font-semibold mt-2">
+                                <a href="https://maps.app.goo.gl/rasnadental" target="_blank" rel="me" class="inline-flex items-center text-dental-700 hover:text-dental-800 text-sm font-semibold mt-2">
                                     <i class="fas fa-external-link-alt mr-1"></i> Open in Google Maps
                                 </a>
                             </div>
@@ -302,8 +347,11 @@
                 <span class="text-white font-bold text-lg">Rasna Dental Care</span>
                 <span class="text-xs text-slate-500">| Advanced Dental & TMJ Centre</span>
             </div>
+            <!-- Social Profiles Linked for SEO -->
             <div class="flex space-x-6">
-                <a href="https://instagram.com/rasna_dental_care" target="_blank" class="hover:text-gold-500 transition text-xl"><i class="fab fa-instagram"></i></a>
+                <a href="https://instagram.com/rasna_dental_care" target="_blank" rel="me" class="hover:text-gold-500 transition text-xl" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com/rasna_dental_care" target="_blank" rel="me" class="hover:text-gold-500 transition text-xl" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://maps.app.goo.gl/rasnadental" target="_blank" rel="me" class="hover:text-gold-500 transition text-xl" aria-label="Google Maps"><i class="fas fa-map-marked-alt"></i></a>
             </div>
             <p class="text-xs text-slate-500">&copy; 2026 Rasna Dental Care. All rights reserved.</p>
         </div>

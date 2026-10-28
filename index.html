@@ -404,7 +404,7 @@
                         <input id="f-consent" name="Consent" value="Yes" type="checkbox" required class="mt-1 h-4 w-4 accent-teal-700">
                         <label for="f-consent" class="text-sm text-slate-600">I agree that Rasna Dental Care may use these details to contact me about my appointment. They will not be shared with anyone else.</label>
                     </div>
-                    <button type="submit" class="w-full py-3 px-4 bg-dental-700 hover:bg-dental-800 text-white font-medium rounded-lg shadow-md transition">
+                    <button id="f-submit" type="submit" disabled class="w-full py-3 px-4 bg-dental-700 hover:bg-dental-800 text-white font-medium rounded-lg shadow-md transition disabled:bg-slate-400 disabled:cursor-not-allowed disabled:shadow-none">
                         Submit Appointment Request
                     </button>
                 </form>
@@ -429,6 +429,17 @@
             <p class="text-xs text-slate-500">&copy; 2026 Rasna Dental Care. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        (function () {
+            var box = document.getElementById('f-consent');
+            var btn = document.getElementById('f-submit');
+            if (!box || !btn) return;
+            function sync() { btn.disabled = !box.checked; }
+            box.addEventListener('change', sync);
+            sync();
+        })();
+    </script>
 
     <!-- Floating WhatsApp button -->
     <a href="https://wa.me/919610130090" target="_blank" rel="noopener" aria-label="Chat with Rasna Dental Care on WhatsApp" class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-green-600 hover:bg-green-700 text-white shadow-xl flex items-center justify-center text-3xl transition">

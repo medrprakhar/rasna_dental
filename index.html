@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rasna Dental Care, Chittorgarh – Advanced Dental & TMJ Centre</title>
-    <link rel="icon" type="image/svg+xml" href="rasna-emblem.svg">
+    <link rel="icon" type="image/svg+xml" href="/rasna-emblem.svg">
     <meta name="description" content="Rasna Dental Care, Chittorgarh – Advanced Dental & TMJ Centre at 4-A, Udaipur Rd, Senthi, Chittorgarh. Treatment for jaw (TMJ) pain, root canals, braces, crowns and family dentistry. Call or WhatsApp 96101 30090.">
     
     <!-- Local Business Schema (JSON-LD) for Local SEO -->
@@ -79,17 +79,18 @@
             }
         }
     </script>
+    <style>summary::-webkit-details-marker{display:none}</style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
     <!-- Top Info Bar -->
     <div class="bg-dental-900 text-slate-100 text-xs sm:text-sm py-2 px-4">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-            <div class="flex items-center space-x-4">
+            <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-1">
                 <span><i class="fas fa-map-marker-alt text-gold-500 mr-1"></i> 4-A, Udaipur Rd, Senthi, Chittorgarh</span>
                 <span><i class="fas fa-clock text-gold-500 mr-1"></i> Open all 7 days · 10 AM onwards</span>
             </div>
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center gap-4">
                 <a href="tel:+919610130090" class="hover:text-gold-500 transition"><i class="fas fa-phone-alt text-gold-500 mr-1"></i> +91 96101 30090</a>
                 <a href="https://instagram.com/rasna_dental_care" target="_blank" rel="me" class="hover:text-gold-500 transition"><i class="fab fa-instagram text-gold-500 mr-1"></i> @rasna_dental_care</a>
             </div>
@@ -98,31 +99,37 @@
 
     <!-- Navigation Header -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Dual Logos and Brand Name -->
-            <div class="flex items-center space-x-3">
-                <img src="rasna-emblem.svg" alt="Rasna Dental Care emblem" width="98" height="56" class="h-14 w-auto">
-                <div>
-                    <h1 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">Rasna Dental Care</h1>
-                    <p class="text-xs text-dental-700 font-semibold tracking-wide">Chittorgarh – Advanced Dental & TMJ Centre</p>
-                </div>
-            </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-3">
+            <a href="/" class="flex items-center gap-3 min-w-0">
+                <img src="/rasna-emblem.svg" alt="Rasna Dental Care emblem" width="98" height="56" class="h-10 sm:h-14 w-auto shrink-0">
+                <span class="min-w-0">
+                    <span class="block text-lg sm:text-2xl font-bold text-slate-900 tracking-tight">Rasna Dental Care</span>
+                    <span class="block text-xs text-dental-700 font-semibold tracking-wide">Chittorgarh – Advanced Dental &amp; TMJ Centre</span>
+                </span>
+            </a>
 
-            <!-- Desktop Nav Links -->
-            <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
-                <a href="tmj-treatment-chittorgarh.html" class="hover:text-dental-700 transition">TMJ Treatment</a>
-                <a href="#doctors" class="hover:text-dental-700 transition">Doctors</a>
-                <a href="#services" class="hover:text-dental-700 transition">Services</a>
-                <a href="#gallery" class="hover:text-dental-700 transition">Clinic Gallery</a>
-                <a href="#reviews" class="hover:text-dental-700 transition">Reviews</a>
-                <a href="#contact" class="hover:text-dental-700 transition">Contact & Map</a>
+            <nav aria-label="Main" class="hidden lg:flex items-center gap-6 font-medium text-slate-600">
+                <a href="/#services" class="hover:text-dental-700 transition">Treatments</a>
+                <a href="/tmj-treatment-chittorgarh.html" class="hover:text-dental-700 transition">TMJ Treatment</a>
+                <a href="/#doctors" class="hover:text-dental-700 transition">Doctors</a>
+                <a href="/#reviews" class="hover:text-dental-700 transition">Reviews</a>
+                <a href="/blog/" class="hover:text-dental-700 transition">Blog</a>
+                <a href="/#contact" class="hover:text-dental-700 transition">Contact</a>
             </nav>
 
-            <!-- CTA Button -->
-            <div>
-                <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-dental-700 hover:bg-dental-800 transition">
-                    Book Appointment
-                </a>
+            <div class="flex items-center gap-2 shrink-0">
+                <a href="/#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-lg shadow-sm text-sm font-medium text-white bg-dental-700 hover:bg-dental-800 transition">Book Appointment</a>
+                <details class="lg:hidden relative">
+                    <summary class="list-none cursor-pointer px-3 py-2 rounded-lg border border-slate-300 text-slate-700 text-sm font-medium"><i class="fas fa-bars mr-1" aria-hidden="true"></i> Menu</summary>
+                    <nav aria-label="Mobile" class="absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-slate-200 py-2 flex flex-col text-slate-700 font-medium">
+                        <a href="/#services" class="px-4 py-2.5 hover:bg-slate-50">Treatments</a>
+                        <a href="/tmj-treatment-chittorgarh.html" class="px-4 py-2.5 hover:bg-slate-50">TMJ Treatment</a>
+                        <a href="/#doctors" class="px-4 py-2.5 hover:bg-slate-50">Doctors</a>
+                        <a href="/#reviews" class="px-4 py-2.5 hover:bg-slate-50">Reviews</a>
+                        <a href="/blog/" class="px-4 py-2.5 hover:bg-slate-50">Blog</a>
+                        <a href="/#contact" class="px-4 py-2.5 hover:bg-slate-50">Contact</a>
+                    </nav>
+                </details>
             </div>
         </div>
     </header>
@@ -135,9 +142,9 @@
                     <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gold-500/10 text-gold-600 border border-gold-500/20">
                         <i class="fas fa-tooth mr-1"></i> Dental & TMJ Centre, Chittorgarh
                     </span>
-                    <h2 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                        Excellence in Dental Care & <span class="text-dental-700">TMJ Treatment</span>
-                    </h2>
+                    <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                        Dental Care &amp; <span class="text-dental-700">TMJ Treatment</span> in Chittorgarh
+                    </h1>
                     <p class="text-lg text-slate-600">
                         Welcome to Rasna Dental Care at 4-A, Udaipur Rd, Senthi, Chittorgarh, opposite Sabji Mandi Gate. Dental and jaw (TMJ) care for your whole family, with modern equipment and careful sterilisation.
                     </p>
@@ -221,7 +228,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">TMJ & Pain Therapy</h3>
                     <p class="text-slate-600">Specialized diagnosis and management for jaw joint disorders, chronic facial pain, and bite alignment.</p>
-                    <a href="tmj-treatment-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">Learn about TMJ treatment <i class="fas fa-arrow-right ml-2"></i></a>
+                    <a href="/tmj-treatment-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">Learn about TMJ treatment <i class="fas fa-arrow-right ml-2"></i></a>
                 </div>
                 <!-- Service 2 -->
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition">
@@ -230,6 +237,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Root Canal Treatment</h3>
                     <p class="text-slate-600">Single-visit or multi-visit root canal treatment using rotary endodontics.</p>
+                    <a href="/root-canal-treatment-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">Learn more <i class="fas fa-arrow-right ml-2"></i></a>
                 </div>
                 <!-- Service 3 -->
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition">
@@ -238,6 +246,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Orthodontics & Braces</h3>
                     <p class="text-slate-600">Straighten your teeth and correct bite issues with traditional braces or modern aligner solutions.</p>
+                    <a href="/braces-aligners-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">Learn more <i class="fas fa-arrow-right ml-2"></i></a>
                 </div>
                 <!-- Service 4 -->
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition">
@@ -246,6 +255,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Crowns & Bridges</h3>
                     <p class="text-slate-600">High-durability ceramic crowns and fixed bridges designed to restore natural aesthetics and function.</p>
+                    <a href="/crowns-bridges-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">Learn more <i class="fas fa-arrow-right ml-2"></i></a>
                 </div>
                 <!-- Service 5 -->
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition">
@@ -254,6 +264,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Preventive Dentistry</h3>
                     <p class="text-slate-600">Routine scaling, polishing, fluoride treatments, and sealants to protect your dental health.</p>
+                    <a href="/dental-checkup-cleaning-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">Learn more <i class="fas fa-arrow-right ml-2"></i></a>
                 </div>
                 <!-- Service 6 -->
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition">
@@ -262,6 +273,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Cosmetic Dentistry</h3>
                     <p class="text-slate-600">Teeth whitening, veneers, and smile makeovers to give you the confident smile you deserve.</p>
+                    <a href="/cosmetic-dentistry-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">Learn more <i class="fas fa-arrow-right ml-2"></i></a>
                 </div>
             </div>
         </div>
@@ -345,6 +357,33 @@
             <div class="text-center mt-12">
                 <a href="https://www.google.com/maps/search/?api=1&query=Rasna+Dental+Care+Chittorgarh" target="_blank" rel="noopener" class="inline-flex items-center px-6 py-3 border border-dental-700 text-dental-700 hover:bg-dental-700 hover:text-white rounded-xl font-medium transition shadow-sm">
                     <i class="fab fa-google mr-2"></i> View All Reviews on Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog teaser -->
+    <section id="blog" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">From our blog</h2>
+                    <p class="mt-3 text-lg text-slate-600">Plain answers to the questions patients ask us most.</p>
+                </div>
+                <a href="/blog/" class="text-dental-700 font-semibold hover:underline">All articles <i class="fas fa-arrow-right ml-1"></i></a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="/blog/jaw-clicking-when-to-worry.html" class="block bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Jaw clicking: when should you worry?</h3>
+                    <p class="text-slate-600 text-sm">A click on its own is often harmless. Here's when it needs a check-up, and what you can do at home.</p>
+                </a>
+                <a href="/blog/root-canal-or-extraction.html" class="block bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Root canal or extraction: how do we decide?</h3>
+                    <p class="text-slate-600 text-sm">Why we try to save an infected tooth, and the cases where taking it out is the better choice.</p>
+                </a>
+                <a href="/blog/daant-mein-thanda-garam-lagna.html" class="block bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition" lang="hi">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">दाँतों में ठंडा-गरम लगना: कारण और इलाज</h3>
+                    <p class="text-slate-600 text-sm">ठंडा पानी या गरम चाय लगने पर झनझनाहट क्यों होती है, और कब डॉक्टर को दिखाना चाहिए।</p>
                 </a>
             </div>
         </div>
@@ -449,21 +488,42 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-6">
-            <div class="flex items-center space-x-3">
-                <span class="text-white font-bold text-lg">Rasna Dental Care</span>
-                <span class="text-xs text-slate-400">| Chittorgarh – Advanced Dental & TMJ Centre</span>
+    <footer class="bg-slate-900 text-slate-300 pt-12 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="lg:col-span-2 space-y-2 text-sm">
+                <p class="text-white font-bold text-lg">Rasna Dental Care</p>
+                <p class="text-slate-400">Chittorgarh – Advanced Dental &amp; TMJ Centre</p>
+                <p>4-A, Udaipur Rd, opp. Sabji Mandi Gate, Senthi, Bapu Nagar, Chittorgarh, Rajasthan 312001</p>
+                <p><a href="tel:+919610130090" class="hover:text-gold-500">+91 96101 30090</a> · <a href="https://wa.me/919610130090" target="_blank" rel="noopener" class="hover:text-gold-500">WhatsApp</a></p>
+                <p>Mon–Fri 10 AM–7:30 PM · Sat 10 AM–8 PM · Sun 10 AM–6 PM</p>
             </div>
-            <p class="text-xs text-slate-400 text-center">4-A, Udaipur Rd, opp. Sabji Mandi Gate, Senthi, Bapu Nagar, Chittorgarh, Rajasthan 312001 · <a href="tel:+919610130090" class="hover:text-gold-500">+91 96101 30090</a></p>
-            <!-- Social Profiles Linked for SEO -->
-            <div class="flex space-x-6">
-                <a href="https://instagram.com/rasna_dental_care" target="_blank" rel="me" class="hover:text-gold-500 transition text-xl" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://facebook.com/rasna_dental_care" target="_blank" rel="me" class="hover:text-gold-500 transition text-xl" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.google.com/maps/search/?api=1&query=Rasna+Dental+Care+Chittorgarh" target="_blank" rel="noopener" class="hover:text-gold-500 transition text-xl" aria-label="Google Maps"><i class="fas fa-map-marked-alt"></i></a>
+            <div>
+                <p class="text-white font-semibold mb-3">Treatments</p>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/tmj-treatment-chittorgarh.html" class="hover:text-gold-500">TMJ &amp; jaw pain</a></li>
+                    <li><a href="/root-canal-treatment-chittorgarh.html" class="hover:text-gold-500">Root canal treatment</a></li>
+                    <li><a href="/braces-aligners-chittorgarh.html" class="hover:text-gold-500">Braces &amp; aligners</a></li>
+                    <li><a href="/crowns-bridges-chittorgarh.html" class="hover:text-gold-500">Crowns &amp; bridges</a></li>
+                    <li><a href="/dental-checkup-cleaning-chittorgarh.html" class="hover:text-gold-500">Check-ups &amp; cleaning</a></li>
+                    <li><a href="/cosmetic-dentistry-chittorgarh.html" class="hover:text-gold-500">Cosmetic dentistry</a></li>
+                </ul>
             </div>
-            <p class="text-xs text-slate-500">&copy; 2026 Rasna Dental Care. All rights reserved.</p>
+            <div>
+                <p class="text-white font-semibold mb-3">Clinic</p>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/#doctors" class="hover:text-gold-500">Our doctors</a></li>
+                    <li><a href="/#reviews" class="hover:text-gold-500">Patient reviews</a></li>
+                    <li><a href="/blog/" class="hover:text-gold-500">Blog</a></li>
+                    <li><a href="/#contact" class="hover:text-gold-500">Book an appointment</a></li>
+                </ul>
+                <div class="flex gap-5 mt-5 text-xl">
+                    <a href="https://instagram.com/rasna_dental_care" target="_blank" rel="me" class="hover:text-gold-500" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com/rasna_dental_care" target="_blank" rel="me" class="hover:text-gold-500" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Rasna+Dental+Care+Chittorgarh" target="_blank" rel="noopener" class="hover:text-gold-500" aria-label="Google Maps"><i class="fas fa-map-marked-alt"></i></a>
+                </div>
+            </div>
         </div>
+        <p class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 pt-6 border-t border-slate-800 text-xs text-slate-400">&copy; 2026 Rasna Dental Care. All rights reserved.</p>
     </footer>
 
     <script>

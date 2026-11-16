@@ -21,7 +21,9 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     <style>summary::-webkit-details-marker{display:none}</style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
@@ -76,6 +78,8 @@
             </div>
         </div>
     </header>
+
+    <main>
 
     <!-- TMJ hero -->
     <section class="bg-gradient-to-br from-dental-50 via-white to-slate-100 py-16 sm:py-20">
@@ -197,6 +201,8 @@
             </div>
         </div>
     </section>
+
+    </main>
 
     <!-- Footer -->
     <footer class="bg-slate-900 text-slate-300 pt-12 pb-8 border-t border-slate-800">

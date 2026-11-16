@@ -57,7 +57,9 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     <style>summary::-webkit-details-marker{display:none}</style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
@@ -113,12 +115,13 @@
         </div>
     </header>
 
+    <main>
     <!-- Hero Section -->
     <section class="relative bg-gradient-to-br from-dental-50 via-white to-slate-100 py-16 sm:py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6">
-                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gold-500/10 text-gold-600 border border-gold-500/20">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gold-500/10 text-amber-800 border border-gold-500/20">
                         <i class="fas fa-tooth mr-1"></i> Dental & TMJ Centre, Chittorgarh
                     </span>
                     <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -132,13 +135,13 @@
                             <i class="fas fa-calendar-check mr-2"></i> Book Consultation
                         </a>
                         <a href="https://wa.me/919610130090" target="_blank" rel="noopener" class="inline-flex justify-center items-center px-6 py-3 border border-slate-300 rounded-xl shadow-sm text-base font-medium text-slate-700 bg-white hover:bg-slate-50 transition">
-                            <i class="fab fa-whatsapp text-green-600 mr-2"></i> WhatsApp 96101 30090
+                            <i class="fab fa-whatsapp text-green-700 mr-2" aria-hidden="true"></i> WhatsApp 96101 30090
                         </a>
                     </div>
                 </div>
                 <div class="relative">
                     <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-xl border border-slate-100 space-y-6">
-                        <h3 class="text-xl font-bold text-slate-900 border-b pb-4">Clinic Highlights</h3>
+                        <h2 class="text-xl font-bold text-slate-900 border-b pb-4">Clinic Highlights</h2>
                         <ul class="space-y-4 text-slate-700">
                             <li class="flex items-start">
                                 <i class="fas fa-check-circle text-dental-700 mt-1 mr-3 text-lg"></i>
@@ -216,7 +219,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Dental Implants</h3>
                     <p class="text-slate-600">Fixed replacement for one tooth, several teeth or a full mouth, and implants that hold dentures firmly.</p>
-                    <a href="/dental-implants-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">Learn more <i class="fas fa-arrow-right ml-2"></i></a>
+                    <a href="/dental-implants-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">About dental implants <i class="fas fa-arrow-right ml-2"></i></a>
                 </div>
                 <!-- Service 2 -->
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition">
@@ -225,7 +228,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Root Canal Treatment</h3>
                     <p class="text-slate-600">Single-visit or multi-visit root canal treatment using rotary endodontics.</p>
-                    <a href="/root-canal-treatment-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">Learn more <i class="fas fa-arrow-right ml-2"></i></a>
+                    <a href="/root-canal-treatment-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">About root canal treatment <i class="fas fa-arrow-right ml-2"></i></a>
                 </div>
                 <!-- Service 3 -->
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition">
@@ -234,7 +237,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Orthodontics & Braces</h3>
                     <p class="text-slate-600">Straighten your teeth and correct bite issues with traditional braces or modern aligner solutions.</p>
-                    <a href="/braces-aligners-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">Learn more <i class="fas fa-arrow-right ml-2"></i></a>
+                    <a href="/braces-aligners-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">About braces and aligners <i class="fas fa-arrow-right ml-2"></i></a>
                 </div>
                 <!-- Service 4 -->
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition">
@@ -243,7 +246,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Crowns & Bridges</h3>
                     <p class="text-slate-600">High-durability ceramic crowns and fixed bridges designed to restore natural aesthetics and function.</p>
-                    <a href="/crowns-bridges-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">Learn more <i class="fas fa-arrow-right ml-2"></i></a>
+                    <a href="/crowns-bridges-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">About crowns and bridges <i class="fas fa-arrow-right ml-2"></i></a>
                 </div>
                 <!-- Service 5 -->
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition">
@@ -252,7 +255,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Preventive Dentistry</h3>
                     <p class="text-slate-600">Routine scaling, polishing, fluoride treatments, and sealants to protect your dental health.</p>
-                    <a href="/dental-checkup-cleaning-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">Learn more <i class="fas fa-arrow-right ml-2"></i></a>
+                    <a href="/dental-checkup-cleaning-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">About check-ups and cleaning <i class="fas fa-arrow-right ml-2"></i></a>
                 </div>
                 <!-- Service 6 -->
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition">
@@ -261,7 +264,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Cosmetic Dentistry</h3>
                     <p class="text-slate-600">Teeth whitening, veneers, and smile makeovers to give you the confident smile you deserve.</p>
-                    <a href="/cosmetic-dentistry-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">Learn more <i class="fas fa-arrow-right ml-2"></i></a>
+                    <a href="/cosmetic-dentistry-chittorgarh.html" class="inline-flex items-center text-dental-700 hover:text-dental-800 font-semibold mt-4">About cosmetic dentistry <i class="fas fa-arrow-right ml-2"></i></a>
                 </div>
             </div>
         </div>
@@ -277,17 +280,17 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- GMB Photo 1 -->
                 <div class="bg-white p-4 rounded-2xl shadow-md border border-slate-200">
-                    <img src="https://lh3.googleusercontent.com/RIeorSLC3hka7WaucA3eH5PM8Li_lP2HcP9fp9eFz5lyN2zptq4fDl90-ff18N2seQJyNMHJAXWQ5MnhyQ=s0" alt="Rasna Dental Care Treatment Setup" class="rounded-xl w-full h-64 object-cover shadow-sm">
+                    <img src="https://lh3.googleusercontent.com/RIeorSLC3hka7WaucA3eH5PM8Li_lP2HcP9fp9eFz5lyN2zptq4fDl90-ff18N2seQJyNMHJAXWQ5MnhyQ=w800-h512-c" alt="Rasna Dental Care Treatment Setup" width="800" height="512" loading="lazy" decoding="async" class="rounded-xl w-full h-64 object-cover shadow-sm">
                     <p class="text-sm font-medium text-slate-700 mt-3 text-center">Advanced Dental Setup</p>
                 </div>
                 <!-- GMB Photo 2 -->
                 <div class="bg-white p-4 rounded-2xl shadow-md border border-slate-200">
-                    <img src="https://lh3.googleusercontent.com/bVOcQtrRidKaYmixAxbmJHkLsxhtjvERaIkx1MPEurZQiVSP7G7sU656hsNFwDbsRVRDQURH_Eklt2lR5Q=s0" alt="Rasna Dental Care Clinic Interior" class="rounded-xl w-full h-64 object-cover shadow-sm">
+                    <img src="https://lh3.googleusercontent.com/bVOcQtrRidKaYmixAxbmJHkLsxhtjvERaIkx1MPEurZQiVSP7G7sU656hsNFwDbsRVRDQURH_Eklt2lR5Q=w800-h512-c" alt="Rasna Dental Care Clinic Interior" width="800" height="512" loading="lazy" decoding="async" class="rounded-xl w-full h-64 object-cover shadow-sm">
                     <p class="text-sm font-medium text-slate-700 mt-3 text-center">Welcoming Clinic Interior</p>
                 </div>
                 <!-- GMB Photo 3 -->
                 <div class="bg-white p-4 rounded-2xl shadow-md border border-slate-200">
-                    <img src="https://lh3.googleusercontent.com/M0YV_QGEh3EUEEZyyTn8RrPUX_kG5_tDc3B90bt-OF6vk0NShjfIxd-_7q8qk-YKV4L3WFTVMCpXz8q8=s0" alt="Rasna Dental Care Equipment" class="rounded-xl w-full h-64 object-cover shadow-sm">
+                    <img src="https://lh3.googleusercontent.com/M0YV_QGEh3EUEEZyyTn8RrPUX_kG5_tDc3B90bt-OF6vk0NShjfIxd-_7q8qk-YKV4L3WFTVMCpXz8q8=w800-h512-c" alt="Rasna Dental Care Equipment" width="800" height="512" loading="lazy" decoding="async" class="rounded-xl w-full h-64 object-cover shadow-sm">
                     <p class="text-sm font-medium text-slate-700 mt-3 text-center">Sterilization & Modern Care</p>
                 </div>
             </div>
@@ -298,7 +301,7 @@
     <section id="reviews" class="py-20 bg-white border-t border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gold-500/10 text-gold-600 border border-gold-500/20 mb-3">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gold-500/10 text-amber-800 border border-gold-500/20 mb-3">
                     <i class="fas fa-star mr-1"></i> Google Business Profile Reviews
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">What Our Patients Say</h2>
@@ -317,8 +320,8 @@
                     <div class="flex items-center space-x-3 border-t pt-4 border-slate-200">
                         <div class="w-10 h-10 bg-dental-700 text-white rounded-full flex items-center justify-center font-bold">D</div>
                         <div>
-                            <h4 class="font-bold text-slate-900 text-sm">Dinu Dhaker</h4>
-                            <p class="text-xs text-slate-500">Google Review</p>
+                            <p class="font-bold text-slate-900 text-sm">Dinu Dhaker</p>
+                            <p class="text-xs text-slate-600">Google Review</p>
                         </div>
                     </div>
                 </div>
@@ -334,8 +337,8 @@
                     <div class="flex items-center space-x-3 border-t pt-4 border-slate-200">
                         <div class="w-10 h-10 bg-dental-700 text-white rounded-full flex items-center justify-center font-bold">P</div>
                         <div>
-                            <h4 class="font-bold text-slate-900 text-sm">P.S. Chanderiya</h4>
-                            <p class="text-xs text-slate-500">Google Review</p>
+                            <p class="font-bold text-slate-900 text-sm">P.S. Chanderiya</p>
+                            <p class="text-xs text-slate-600">Google Review</p>
                         </div>
                     </div>
                 </div>
@@ -394,7 +397,7 @@
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-slate-900">Location</h4>
+                                <h3 class="font-bold text-slate-900">Location</h3>
                                 <p class="text-slate-600 text-sm">4-A, Udaipur Rd, opp. Sabji Mandi Gate, Senthi, Bapu Nagar, Chittorgarh, Rajasthan 312001</p>
                                 <a href="https://www.google.com/maps/search/?api=1&query=Rasna+Dental+Care+Chittorgarh" target="_blank" rel="noopener" class="inline-flex items-center text-dental-700 hover:text-dental-800 text-sm font-semibold mt-2">
                                     <i class="fas fa-external-link-alt mr-1"></i> Open in Google Maps
@@ -406,7 +409,7 @@
                                 <i class="fas fa-phone-alt"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-slate-900">Phone & WhatsApp</h4>
+                                <h3 class="font-bold text-slate-900">Phone & WhatsApp</h3>
                                 <p class="text-slate-600 text-sm"><a href="tel:+919610130090" class="hover:text-dental-700">+91 96101 30090</a></p>
                                 <a href="https://wa.me/919610130090" target="_blank" rel="noopener" class="inline-flex items-center text-green-700 hover:text-green-800 text-sm font-semibold mt-2">
                                     <i class="fab fa-whatsapp mr-1"></i> Chat on WhatsApp
@@ -418,7 +421,7 @@
                                 <i class="fas fa-clock"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-slate-900">Working Hours</h4>
+                                <h3 class="font-bold text-slate-900">Working Hours</h3>
                                 <p class="text-slate-600 text-sm">Monday – Friday: 10:00 AM – 7:30 PM<br>Saturday: 10:00 AM – 8:00 PM<br>Sunday: 10:00 AM – 6:00 PM</p>
                             </div>
                         </div>
@@ -475,6 +478,8 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer class="bg-slate-900 text-slate-300 pt-12 pb-8 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -529,7 +534,7 @@
     </script>
 
     <!-- Floating WhatsApp button -->
-    <a href="https://wa.me/919610130090" target="_blank" rel="noopener" aria-label="Chat with Rasna Dental Care on WhatsApp" class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-green-600 hover:bg-green-700 text-white shadow-xl flex items-center justify-center text-3xl transition">
+    <a href="https://wa.me/919610130090" target="_blank" rel="noopener" aria-label="Chat with Rasna Dental Care on WhatsApp" class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-green-700 hover:bg-green-800 text-white shadow-xl flex items-center justify-center text-3xl transition">
         <i class="fab fa-whatsapp"></i>
     </a>
 

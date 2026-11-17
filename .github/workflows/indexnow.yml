@@ -1,0 +1,20 @@
+name: Tell Bing about updated pages (IndexNow)
+on:
+  push:
+    branches: [main]
+    paths: ['sitemap.xml', '**.html']
+  workflow_dispatch:
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Wait for GitHub Pages to publish
+        run: sleep 120
+      - name: Send all sitemap URLs to IndexNow
+        run: |
+          KEY=6fcf7eaf098f269a726ee74cd9d0c48c
+          URLS=$(grep -o '<loc>[^<]*</loc>' sitemap.xml | sed 's/<[^>]*>//g' | python3 -c 'import sys,json;print(json.dumps([l.strip() for l in sys.stdin if l.strip()]))')
+          BODY="{\"host\":\"www.rasnadental.com\",\"key\":\"$KEY\",\"keyLocation\":\"https://www.rasnadental.com/$KEY.txt\",\"urlList\":$URLS}"
+          echo "$BODY"
+          curl -sS -o /dev/null -w "IndexNow response: %{http_code}\n" -X POST https://api.indexnow.org/indexnow -H 'Content-Type: application/json; charset=utf-8' -d "$BODY"

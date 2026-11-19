@@ -75,6 +75,17 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+      // Lead tracking: phone taps, WhatsApp taps, appointment form
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('a[href]');
+        if (!a) return;
+        var h = a.getAttribute('href') || '';
+        if (h.indexOf('tel:') === 0) gtag('event', 'click_call', { link_url: h, page_path: location.pathname });
+        else if (h.indexOf('wa.me') !== -1 || h.indexOf('whatsapp') !== -1) gtag('event', 'click_whatsapp', { link_url: h, page_path: location.pathname });
+      });
+      document.addEventListener('submit', function (e) {
+        if (e.target && e.target.getAttribute('toolname') === 'requestDentalAppointment') gtag('event', 'generate_lead', { form_name: 'appointment', page_path: location.pathname });
+      });
     </script>
     <style>summary::-webkit-details-marker{display:none}</style>
 </head>
